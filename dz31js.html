@@ -16,21 +16,64 @@
         input {
             margin: 5px;
         }
+
+        .img_block {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            background-color: #EBD734;
+        }
+
+        .nav__ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .nav__ul > li {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-<h1>First task</h1>
+<nav class="nav">
+    <ul class="nav__ul">
+        <li tabindex="1">Home</li>
+        <li tabindex="2">Posts</li>
+        <li tabindex="3">Log in</li>
+        <li tabindex="4">Log out</li>
+        <li tabindex="5">Contact</li>
+    </ul>
+</nav>
+<h1> №1</h1>
 <div class="firstTask">
     <button id="button">Swap values</button>
     <input type="text" class="firstInput" placeholder="Enter something">
     <input type="text" class="secondInput" placeholder="Enter something">
 </div>
-<h1>Second Task</h1>
+<h1>№2</h1>
 <div class="secondTask">
-    <input type="text" data-length="5">
-    <input type="text" data-length="6">
-    <input type="text" data-length="7">
+    <input type="text" data-length="5" class="input">
+    <input type="text" data-length="6" class="input">
+    <input type="text" data-length="7" class="input">
 </div>
-<script src=" app.js"></script>
+<h1>№3</h1>
+<div class="img_block">
+    <img src="nature-drops.jpg" alt="" class="img_block__img">
+</div>
+
+<script src="app.js"></script>
+
 </body>
 </html>
